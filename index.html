@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Slot7</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="Mystyle.css" />
     <style>
-      font-face {
+      @font-face {
         font-family: "QuicksandBook";
         src: url("fonts/Quicksand_Book-webfont.eot");
         src: url("fonts/Quicksand_Book-webfont.eot?#iefix")
@@ -18,14 +19,14 @@
       }
       body {
         color: #ffffff;
-        background: url(images/bg.jpg);
-        font-family: Georgia, "Times New Roman", Times, serif;
+        background: #413f3b url(images/bg.jpg);
         font-size: 90%;
         margin: 0px;
         text-align: center;
       }
       a {
         color: #b5c1ad;
+        text-decoration: none;
       }
       a:hover {
         color: #ffffff;
@@ -35,31 +36,23 @@
         padding: 0px 0px 0px 0px;
         height: 100px;
         position: fixed;
-        top: 0;
+        top: 0px;
         width: 100%;
         z-index: 50;
       }
-      .grid_5 {
-        padding-right: 100px;
-      }
-
       .nav {
+        float: right;
         font-family: Arial, Helvetica, sans-serif;
         padding: 45px 0px 0px 0px;
-        float: right;
-        margin-left: 200px;
+        text-align: right;
       }
-      .nav a{
-        text-decoration: none;
-      }
-
       .wrapper {
-        margin: 8px auto;
+        width: 960px;
+        margin: 0px auto;
         background-image: url(images/bg-triangle.png);
         background-repeat: no-repeat;
         background-position: 0px 0px;
         text-align: left;
-        width: 71%;
       }
       .logo {
         margin-bottom: 20px;
@@ -77,23 +70,12 @@
       .date {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 75%;
-        line-height: 1.4em;
+        color: #b5c1ad;
       }
       .intro {
         clear: left;
         font-size: 90%;
         line-height: 1.4em;
-        float: right;
-        padding-left: 1000px;
-        width: 25%;
-        line-height: 1.7em;
-      }
-      .grid_6 {
-        float: right;
-        padding-right: 50px;
-      }
-      .grid_6 a {
-        text-decoration: none;
       }
       .main-story {
         background-image: url(images/triangles.png);
@@ -101,54 +83,32 @@
         background-position: 122px 142px;
         height: 570px;
       }
-      .grid_12 a{
-        text-decoration: none;
-        margin-right: 910px;
-        margin-bottom: 0;
-      }
-
       .more-articles {
-        padding-right: 50px;
-        padding-left: 50px;
-        display: flex;
-        align-items: center;
+        border-top: 1px solid #ffffff;
+        padding: 10px;
         float: left;
-        text-align: center;
+        padding-top: 50px;
       }
-
       .more-articles p {
-        border-bottom: 1px solid gray;
-        padding: 10px 0px 15px 10px;
+        border-bottom: 1px solid #807c72;
+        padding: 5px 0px 15px 0px;
         font-size: 80%;
-        text-align: left;
-        width: 70%;
-        padding-left: 50px;
-        
-
-        
-      }
-      .more-articles p {
-        text-decoration: none;
       }
       .more-articles p:last-child {
         border-bottom: none;
       }
-
       .footer {
         clear: both;
-        background: rgba(0, 0, 0, 2);
+        background: rgba(0, 0, 0, 0.2);
         padding: 5px 10px;
       }
       .footer p {
-        font-size: 75%;
         font-family: Arial, Helvetica, sans-serif;
+        font-size: 75%;
         text-align: right;
-        padding-right: 50px;
       }
-      .footer a {
+      footer a {
         color: #807c72;
-        text-align: right;
-       
       }
     </style>
   </head>
@@ -158,7 +118,7 @@
         <div class="grid_5">
           <img
             src="images/logo.png"
-            alt="Pedal Faster - The modern bicycle magazine"
+            alt="Pedal-Faster - The modern bicycle magazine"
             width="216"
             height="37"
             class="logo"
@@ -169,96 +129,99 @@
             width="116"
             height="100"
           />
-          <div class="nav grid_7">
-            <a href="">home</a> / <a href="">news</a> /
-            <a href="">archives</a> / <a href="">about</a> /
-            <a href="">contact</a>
-          </div>
+        </div>
+        <div class="nav grid_7">
+          <a href="">home</a> / <a href="">news</a> / <a href="">archives</a> /
+          <a href="">about</a> / <a href="">contact</a>
         </div>
       </div>
     </div>
-    <div>
-      <div class="wrapper">
-        <div class="main-story container_12">
-          <div class="grid_6 push_6">
-            <h1><a href="">Fixed Gear Forever</a></h1>
-          </div>
-          <div class="intro grid_3 push 9">
-            <p class="date">16 APRIL 2011</p>
-            <p>
-              The veloheld combines minimalist design with superb quality.
-              Devoid of excessive graphics and gear shift conponents, the
-              veloheld product range delights us with its beauty and simplicity.
-              The black and white (yin and yang?) bicycles feature a short
-              wheelbase, a single gear and a narrow handlebar... All you need to
-              explore the city streets.
-            </p>
-            <p>
-              For those who want to create their bike themselves, the voloheld
-              frames come in three sizes and two colours and are the perfect
-              starting point. <a href="">Continue reading...</a>
-            </p>
-          </div>
+    <div class="wrapper">
+      <div class="main-story container_12">
+        <div class="grid_6 push_6">
+          <h1><a href=""></a>Fixed Gear Forever</h1>
+        </div>
+        <div class="intro grid_3 push_9">
+          <p class="date">16 APRIL 2011</p>
+          <p>
+            The veloheld combines minimalist design with superb quality. Devoid
+            of excessive graphics and gear shift conponents, the veloheld
+            product range delights us with its beauty and simplicity. The black
+            and white (yin and yang?) bicycles feature a short wheelbase, a
+            single gear and a narrow handlebar... All you need to explore the
+            city streets.
+          </p>
+          <p>
+            For those who want to create their bike themselves, the voloheld
+            frames come in three sizes and two colours and are the perfect
+            starting point. <a href="">Continue reading...</a>
+          </p>
         </div>
       </div>
-    </div>
-    <hr />
-    <h2 class="grid_12"><a href="">More Articles</a></h2>
-    <div class="more-articles container_12">
-      <div class="grid_3">
-        <img
-          src="images/more1.jpg"
-          alt="The road ahead"
-          width="220"
-          height="125"
-        />
-        <p>
-          <a href=""
-            >On the Road: From the fixed gear fanatic's point of view</a
-          >
-        </p>
-        <p>
-          <a href="">Brand History: Pashley Cycles - hand-build in England</a>
-        </p>
-        <p>
-          <a href=""
-            >Frame Wars: Innovations in crycle manufacture and repair</a
-          >
-        </p>
-      </div>
-      <div class="gril_3">
-        <img src="images/more2.jpg" alt="Sketchbook" width="220" height="125" />
-        <p><a href="">Touring Diary: A sketchbook in your basket</a></p>
-        <p>
-          <a href="">Top Ten Newconners for 2012: Apeek atwhat's to come</a>
-        </p>
-        <p><a href="">InnerTube: The best cycling videos on the web</a></p>
-      </div>
-      <div class="gril_3">
-        <img
-          src="images/more3.jpg"
-          alt="Repair shop sign"
-          width="220"
-          height="125"
-        />
-        <p>
-          <a href="">Product Reviews: All baskets were not created equal</a>
-        </p>
-        <p>
-          <a href="">Going Public: Out & about ith the founder of Public</a>
-        </p>
-        <p><a href="">Cycle Lane Defence: Know your rights</a></p>
-      </div>
-      <div class="grid_3">
-        <img
-          src="images/more4.jpg"
-          alt="Schwinn Spitfire"
-          width="220"
-          height="125"
-        />
-        <p><a href="">Bicycle Wall of Fame: The 1958 Schwinn Spitfire</a></p>
-        <p><a href="">Reader Survey: Share your thoughts with us!</a></p>
-        <p><a href="">Chain Gang: The evolution of the humble bike chain</a></p>
+      <div class="more-articles container_12">
+        <h2 class="grid_2"><a href="">More-articles</a></h2>
+        <div class="grid_3">
+          <img
+            src="images/more1.jpg"
+            alt="The road ahead"
+            width="220"
+            height="125"
+          />
+          <p>
+            <a href=""
+              >On the Road: From the fixed gear fanatic's point of view</a
+            >
+          </p>
+          <p>
+            <a href="">Brand History: Pashley Cycles - hand-build in England</a>
+          </p>
+          <p>
+            <a href=""
+              >Frame Wars: Innovations in crycle manufacture and repair</a
+            >
+          </p>
+        </div>
+        <div class="grid_3">
+          <img
+            src="images/more2.jpg"
+            alt="Sketchbook"
+            width="220"
+            height="125"
+          />
+          <p><a href="">Touring Diary: A sketchbook in your basket</a></p>
+          <p>
+            <a href="">Top Ten Newconners for 2012: Apeek atwhat's to come</a>
+          </p>
+          <p><a href="">InnerTube: The best cycling videos on the web</a></p>
+        </div>
+        <div class="grid_3">
+          <img
+            src="images/more3.jpg"
+            alt="Repair shop sign"
+            width="220"
+            height="125"
+          />
+          <p>
+            <a href="">Product Reviews: All baskets were not created equal</a>
+          </p>
+          <p>
+            <a href="">Going Public: Out & about ith the founder of Public</a>
+          </p>
+          <p><a href="">Cycle Lane Defence: Know your rights</a></p>
+        </div>
+        <div class="grid_3">
+          <img
+            src="images/more4.jpg"
+            alt="Schwinn Spitfire"
+            width="220"
+            height="125"
+          />
+          <p><a href="">Bicycle Wall of Fame: The 1958 Schwinn Spitfire</a></p>
+          <p><a href="">Reader Survey: Share your thoughts with us!</a></p>
+          <p>
+            <a href="">Chain Gang: The evolution of the humble bike chain</a>
+          </p>
+        </div>
       </div>
     </div>
     <div class="footer clearfix">
