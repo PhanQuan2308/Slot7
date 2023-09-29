@@ -28,7 +28,7 @@ body {
 .grid_11,
 .grid_12 {
   display: inline;
-  float: left;
+  
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -66,11 +66,14 @@ body {
 }
 
 .container_12 .grid_2 {
-  width: 140px;
+ padding-top: 0;
+ padding-right: 700px;
 }
 
 .container_12 .grid_3 {
   width: 220px;
+  padding-top: 20px;
+  float: left;
 }
 
 .container_12 .grid_4 {
